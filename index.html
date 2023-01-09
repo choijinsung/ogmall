@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG mall</title>
+  <link rel="icon" href="./logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- Google APIs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+      integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" defer src="./js/main.js"></script>
+</head>
+<body style="overflow-x:hidden; overflow-y:auto;">
+  <!-- HEADER -->
+  <header>
+    <div class="sale-promotion">
+      <h2>22 FW SEASON OFF SALE</h2>
+      <div class="goto-promotion">
+        <span class="material-icons">arrow_forward_ios</span>
+      </div>
+    </div>
+    <nav>
+      <div class="main-menu">
+        <ul class="menu">
+          <li class="item">
+            <a href="javascript:void(0)"><img src="./images/logo-white.png" alt="로고" class="main-menu-logo"></a>
+          </li>
+          <li class="item">
+            <div class="item__name">NEW</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>ALL</h4>
+                  </li>
+                  <li>
+                    <h4>CLOTHING</h4>
+                  </li>
+                  <li>
+                    <h4>ACCESSORY</h4>
+                  </li>
+                  <li>
+                    <h4>SALE</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">BEST</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>ALL</h4>
+                  </li>
+                  <li>
+                    <h4>CLOTHING</h4>
+                  </li>
+                  <li>
+                    <h4>ACCESSORY</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li><li class="item">
+            <div class="item__name">SALE</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>22 FW SALE</h4>
+                  </li>
+                  <li>
+                    <h4>OUTER</h4>
+                  </li>
+                  <li>
+                    <h4>TOP</h4>
+                  </li>
+                  <li>
+                    <h4>DRESS</h4>
+                  </li>
+                  <li>
+                    <h4>BOTTOM</h4>
+                  </li>
+                  <li>
+                    <h4>ACCESSORY</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-menu">
+        <ul class="menu">
+          <li><a href="javascript:void(0)" class="introduction">회원가입</a></li>
+          <li><a href="javascript:void(0)">로그인</a></li>
+          <li><a href="javascript:void(0)">고객센터</a></li>
+          <li><a href="javascript:void(0)">매장찾기</a></li>
+          <li><span class="material-icons">search</span></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <section class="main">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/main1.jpg" alt="메인아이템" class="main-item">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main2.jpg" alt="메인아이템" class="main-item">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main3.png" alt="메인아이템" class="main-item">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main4.jpg" alt="메인아이템" class="main-item">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main5.jpg" alt="메인아이템" class="main-item">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev">
+      <span class="material-icons">arrow_back_ios</span>
+    </div>
+    <div class="swiper-button-next">
+      <span class="material-icons">arrow_forward_ios</span>
+    </div>
+  </section>
+  <!-- THREE BUTTONS -->
+  <div class="three-btns">
+    <div class="go-up"><span class="material-icons">expand_less</span></div>
+    <div><span class="material-icons">sms</span></div>
+    <div><span class="material-icons">history</span></div>   
+  </div>
+  <!-- NEW -->
+  <section class="new">
+    <div class="inner">
+      <div class="text">
+        <h1>NEW</h1>
+        <div class="brand-part">
+          <h2>브랜드관 가기</h2>
+          <div class="goto-brand-part">
+            <span class="material-icons">arrow_forward_ios</span>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item">
+          <img src="./images/new_item1.png" alt="뉴 아이템">
+          <p>OG JEANS</p>
+          <p>미니 뱃지 크루건 가디건</p>
+          <p>100,000</p>
+        </div>
+        <div class="item">
+          <img src="./images/new_item2.png" alt="뉴 아이템">
+          <p>OG HOME</p>
+          <p>오가닉 코튼 케이블 크루넥 스웨터</p>
+          <p>100,000</p>
+        </div>
+        <div class="item">
+          <img src="./images/new_item3.png" alt="뉴 아이템">
+          <p>OG ACCESSORIES</p>
+          <p>올 댓 클러치</p>
+          <p>100,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BEST -->
+  <section class="best">
+    <div class="inner">
+      <div class="text">
+        <h1>BEST</h1>
+        <h2>KEYWORD</h2>
+        <h2>RANKING</h2>
+        <div class="navigations">
+          <!-- Insert via JS -->
+        </div>
+      </div>
+      <div class="items">
+        <div class="big-img">
+          <img src="./images/best1.png" alt="베스트 아이템">
+        </div>
+        <div class="small-img">
+          <div class="first-line">
+            <img src="./images/best2.png" alt="베스트 아이템">
+            <img src="./images/best3.png" alt="베스트 아이템">
+          </div>
+          <div class="middle-line">
+            <h3>for HER & for HIM&nbsp;&nbsp;&nbsp;</h3>
+            <p>모두가 만족하는 올 댓 쇼핑</p>
+          </div>
+          <div class="last-line">
+            <img src="./images/best4.png" alt="베스트 아이템">
+            <img src="./images/best5.png" alt="베스트 아이템">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- COUPON -->
+  <section class="coupon">
+    <div class="inner">
+      <div class="inner-left">
+        <h3>모바일로 OG몰 쇼핑해요!</h3>
+        <p>앱 첫 로그인 20% 쿠폰 + 앱 첫 구매 5천 포인트</p>
+        <div class="btn-coupon">
+          <span>coupon</span>
+        </div>
+      </div>
+      <div class="inner-right">
+        <h3>모바일로 OG몰 쇼핑해요!</h3>
+        <p>앱 첫 로그인 20% 쿠폰 + 앱 첫 구매 5천 포인트</p>
+        <div class="btn-coupon">
+          <span>coupon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SALE -->
+  <section class="sale">
+    <div class="inner">
+      <div class="text">
+        <h1>NEW</h1>
+        <div class="brand-part">
+          <h2>전체보기</h2>
+          <div class="goto-brand-part">
+            <span class="material-icons">arrow_forward_ios</span>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item">
+          <img src="./images/sale1.png" alt="뉴 아이템">
+          <p>OG JEANS</p>
+          <p>미니 뱃지 크루건 가디건</p>
+          <p>100,000</p>
+        </div>
+        <div class="item">
+          <img src="./images/sale2.png" alt="뉴 아이템">
+          <p>OG HOME</p>
+          <p>오가닉 코튼 케이블 크루넥 스웨터</p>
+          <p>100,000</p>
+        </div>
+        <div class="item">
+          <img src="./images/sale3.png" alt="뉴 아이템">
+          <p>OG ACCESSORIES</p>
+          <p>올 댓 클러치</p>
+          <p>100,000</p>
+        </div>
+        <div class="item">
+          <img src="./images/sale4.png" alt="뉴 아이템">
+          <p>OG ACCESSORIES</p>
+          <p>올 댓 클러치</p>
+          <p>100,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GUIDANCE -->
+  <section class="guidance">
+    <div class="inner">
+      <div class="thing">
+        <img src="./images/logo_exchange.png" alt="교환">
+        <p>무료교환</p>
+      </div>
+      <div class="thing">
+        <img src="./images/logo_delivery.png" alt="배송">
+        <p>무료배송</p>
+      </div>
+      <div class="thing">
+        <img src="./images/logo_payment.png" alt="결제">
+        <p>안전결제</p>
+      </div>
+      <div class="thing">
+        <img src="./images/logo_callcenter.png" alt="상담원">
+        <p>상담원</p>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>(주)OR코리아 | 대표자: 김진태</p>
+    <p>사업자 등록번호: 120-87-00000 | 주소: 서울시 강남구 학동로 000 19층</p>
+    <p>통신판매업 신고번호: 2020-서울강남-0000 [사업자정보확인]</p>
+    <p>© COPYRIGHT 2022 RALPH LAUREN. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+</html>

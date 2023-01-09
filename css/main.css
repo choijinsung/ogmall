@@ -1,0 +1,527 @@
+/* COMMON */
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* HEADER */
+header .sale-promotion {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
+}
+header .sale-promotion h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+header .sale-promotion .goto-promotion {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .sale-promotion .goto-promotion .material-icons {
+  font-size: 20px;
+}
+header nav {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .main-menu {
+  width: 25%;
+  height: 100%;
+  margin-left: 10%;
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu .main-menu-logo {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+header .menu .item .item__name {
+  padding: 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .menu .item:hover .item__name {
+  background-color: black;
+  color: white;
+  border-radius: 6px 6px 0 0;
+}
+header .menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  z-index: 8;
+}
+header .menu .item:hover .item__contents {
+  display: block;
+}
+header .menu .item .item__contents .contents__menu {
+  background-color: black;
+}
+header .menu .item .item__contents .contents__menu > ul {
+  padding: 20px 250px;
+  display: flex;
+}
+header .menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+header .menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+}
+header .menu .item .item__contents .contents__menu > ul > li h4:hover {
+  color: white;
+}
+header nav .sub-menu {
+  width: 30%;
+  height: 100%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .sub-menu .menu > li {
+  padding: 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+/* MAIN */
+.main .main-item {
+  width: 480px;
+  height: 635px;
+  border-bottom-left-radius: 50px;
+}
+
+.main .swiper-slide {
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.main .swiper-slide-active {
+  opacity: 1;
+}
+.main .swiper-pagination {
+  bottom: -40px !important;
+  z-index: 1;
+}
+.main .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 13px;
+  height: 12px;
+  margin-right: 6px;
+}
+.main .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.main .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
+}
+.main .swiper-button-prev,
+.main .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  top: 300px;
+  z-index: 1;
+  color: white;
+}
+.main .swiper-button-prev {
+  top: 50%;
+  left: 50%;
+  margin-left: -720px;
+}
+.main .swiper-button-next {
+  top: 50%;
+  right: 50%;
+  margin-right: -720px;
+}
+.main .swiper-button-prev:after,
+.main .swiper-button-next:after {
+  display: none;
+}
+/* TRHEE BUTTONS */
+.three-btns {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  z-index: 9;
+  width: 50px;
+  height: 150px;
+  background-color: black;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* NEW */
+.new {
+  position: relative;
+}
+.new .inner {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  background-image: url('../images/new_bg.png');
+  background-repeat: no-repeat;
+  padding: 150px 200px;
+}
+.new .inner .text {
+  width: 150px;
+  height: 100px;
+}
+.new .inner .text h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+.new .brand-part {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.new .brand-part h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.new .brand-part .goto-brand-part {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new .brand-part .goto-brand-part .material-icons {
+  font-size: 12px;
+  font-weight: 400;
+}
+.new .inner .items {
+  display: flex;
+  margin-left: 150px;
+}
+.new .inner .items .item {
+  width: 252px;
+  height: 350px;
+  margin-right: 50px;
+}
+.new .inner .items .item p {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+/* BEST */
+.best {
+  position: relative;
+}
+.best .inner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  padding: 50px 200px;
+}
+.best .inner .text {
+  width: 270px;
+  height: 100%;
+}
+.best .inner .text h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+.best .inner .text h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+}
+/* BEST / Navigations */
+.best .navigations {
+  margin-top: 30px;
+  height: auto;
+  display: block;
+}
+.best .navigations .map {
+  margin-top: 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  user-select: none;
+}
+.best .navigations .map:nth-child(6) {
+  padding-bottom: 0;
+}
+.best .navigations .map h3 {
+  color: black;
+  padding: 12px 0;
+  font-weight: 400;
+  display: flex;
+}
+.best .navigations .map:hover h3 {
+  font-weight: 600;
+}
+.best .navigations .map h3 .text {
+  flex-grow: 1;
+}
+.best .navigations .map h3 .icon {
+  display: block;
+  padding: 0 10px;
+  color: black;
+}
+.best .navigations .map ul {
+  height: 0;
+  overflow: hidden;
+  transition:
+    transform .6s,
+    opacity .4s;
+  transform: translate(0, -20px);
+  opacity: 0;
+  display: flex;
+}
+.best .navigations .map li {
+  margin-top: 0;
+}
+.best .navigations .map li a {
+  color: black;
+  display: block;
+  padding: 6px 12px;
+}
+.best .navigations .map li a img {
+  width: 100%;
+  height: 100%;
+}
+/*Active accordion menu*/
+.best .navigations .map:hover ul {
+  height: auto;
+  overflow: visible;
+  padding: 6px 0 18px;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.best .items {
+  display: flex;
+}
+.best .items .big-img {
+  margin-top: 0;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.best .items .big-img img {
+  width: 100%;
+  height: 100%;
+}
+.best .items .small-img .first-line {
+  display: flex;
+}
+.best .items .small-img .middle-line {
+  color: black;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.best .items .small-img .middle-line h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.best .items .small-img .middle-line p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.best .items .small-img .last-line {
+  display: flex;
+}
+.best .items .small-img .first-line img,
+.best .items .small-img .last-line img
+{
+  margin-right: 40px;
+}
+.best .items .small-img .first-line img:last-child,
+.best .items .small-img .last-line img:last-child {
+  margin-right: 0;
+}
+/* COUPON */
+.coupon {
+  margin-top: 60px;
+}
+.coupon .inner {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.coupon .inner .inner-left {
+  margin-left: 15%;
+  width: 38%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.coupon .inner .inner-right {
+  width: 38%;
+  height: 100%;
+  background-color: rgb(206, 151, 99);
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.coupon .inner .inner-left h3,
+.coupon .inner .inner-right h3 {
+  font-size: 16px;
+  margin-left: 30px;
+}
+.coupon .inner .inner-left p,
+.coupon .inner .inner-right p {
+  font-size: 8px;
+  margin-left: 15px;
+}
+.coupon .inner .inner-right h3,
+.coupon .inner .inner-right p {
+  color: rgb(0, 0, 0);
+}
+.coupon .inner .inner-left .btn-coupon {
+  background-color: rgb(206, 151, 99);
+  border: none;
+  width: 80px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coupon .inner .inner-right .btn-coupon {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  width: 80px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* SALE */
+.sale {
+  position: relative;
+  margin-top: 120px;
+}
+.sale .inner {
+  width: 100%;
+  height: 450px;
+  background-image: url('../images/sale_bg.png');
+  background-repeat: no-repeat;
+  padding: 50px 200px;
+  border-bottom: 1px solid #b5b5b5;
+}
+.sale .inner .text {
+  width: 78%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.sale .inner .text h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.sale .brand-part {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sale .brand-part h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.sale .brand-part .goto-brand-part {
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale .brand-part .goto-brand-part .material-icons {
+  font-size: 12px;
+  font-weight: 400;
+}
+.sale .inner .items {
+  display: flex;
+  margin-left: 0;
+}
+.sale .inner .items .item {
+  width: 252px;
+  height: 350px;
+  margin-right: 50px;
+}
+.sale .inner .items .item p {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+/* GUIDANCE */
+.guidance {
+  width: 100%;
+  height: 130px;
+}
+.guidance .inner {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guidance .inner .thing {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guidance .inner .thing p {
+  font-size: 12px;
+  margin-top: 20px;
+  color: black;
+}
+footer {
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+footer p {
+  font-size: 12px;
+  line-height: 1.7;
+}

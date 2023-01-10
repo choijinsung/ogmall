@@ -24,7 +24,6 @@ header .sale-promotion h2 {
   font-weight: 700;
 }
 header .sale-promotion .goto-promotion {
-  width: 40px;
   height: 40px;
   cursor: pointer;
   display: flex;
@@ -110,16 +109,42 @@ header nav .sub-menu .menu > li {
   font-size: 13px;
 }
 /* MAIN */
-.main .main-item {
-  width: 480px;
-  height: 635px;
-  border-bottom-left-radius: 50px;
-}
-
 .main .swiper-slide {
   position: relative;
   opacity: 1;
   transition: opacity 1s;
+}
+.main .swiper-slide .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .swiper-slide .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.main .swiper-slide .text .title {
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.main .swiper-slide .text .first-line {
+  margin-bottom: 0;
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.main .swiper-slide .text .last-line {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.main .swiper-slide .text .description {
+  margin-bottom: 70px;
+  margin-left: 50px;
 }
 .main .swiper-slide-active {
   opacity: 1;
@@ -209,7 +234,7 @@ header nav .sub-menu .menu > li {
   align-items: center;
 }
 .new .brand-part h2 {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 .new .brand-part .goto-brand-part {
@@ -221,7 +246,7 @@ header nav .sub-menu .menu > li {
   align-items: center;
 }
 .new .brand-part .goto-brand-part .material-icons {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 .new .inner .items {
@@ -234,7 +259,7 @@ header nav .sub-menu .menu > li {
   margin-right: 50px;
 }
 .new .inner .items .item p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
 }
@@ -350,7 +375,7 @@ header nav .sub-menu .menu > li {
   font-weight: 700;
 }
 .best .items .small-img .middle-line p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 .best .items .small-img .last-line {
@@ -381,7 +406,11 @@ header nav .sub-menu .menu > li {
   background-color: rgb(0, 0, 0);
   border-bottom-left-radius: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.coupon .inner .inner-left .text {
+  display: flex;
 }
 .coupon .inner .inner-right {
   width: 38%;
@@ -389,20 +418,24 @@ header nav .sub-menu .menu > li {
   background-color: rgb(206, 151, 99);
   border-bottom-left-radius: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.coupon .inner .inner-left h3,
-.coupon .inner .inner-right h3 {
+.coupon .inner .inner-right .text {
+  display: flex;
+}
+.coupon .inner .inner-left .text h3,
+.coupon .inner .inner-right .text h3 {
   font-size: 16px;
   margin-left: 30px;
 }
-.coupon .inner .inner-left p,
-.coupon .inner .inner-right p {
-  font-size: 8px;
+.coupon .inner .inner-left .text p,
+.coupon .inner .inner-right .text p {
+  font-size: 12px;
   margin-left: 15px;
 }
-.coupon .inner .inner-right h3,
-.coupon .inner .inner-right p {
+.coupon .inner .inner-right .text h3,
+.coupon .inner .inner-right .text p {
   color: rgb(0, 0, 0);
 }
 .coupon .inner .inner-left .btn-coupon {
@@ -412,7 +445,7 @@ header nav .sub-menu .menu > li {
   height: 60px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,7 +457,7 @@ header nav .sub-menu .menu > li {
   height: 60px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,7 +492,7 @@ header nav .sub-menu .menu > li {
   align-items: center;
 }
 .sale .brand-part h2 {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 .sale .brand-part .goto-brand-part {
@@ -471,7 +504,7 @@ header nav .sub-menu .menu > li {
   align-items: center;
 }
 .sale .brand-part .goto-brand-part .material-icons {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
 }
 .sale .inner .items {
@@ -484,7 +517,7 @@ header nav .sub-menu .menu > li {
   margin-right: 50px;
 }
 .sale .inner .items .item p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
 }
@@ -510,7 +543,7 @@ header nav .sub-menu .menu > li {
   align-items: center;
 }
 .guidance .inner .thing p {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 20px;
   color: black;
 }
@@ -522,6 +555,6 @@ footer {
   padding: 50px 0 0 0;
 }
 footer p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
 }

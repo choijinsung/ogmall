@@ -150,7 +150,7 @@ header nav .sub-menu .menu > li {
   opacity: 1;
 }
 .main .swiper-pagination {
-  bottom: -40px !important;
+  bottom: -50px !important;
   z-index: 1;
 }
 .main .swiper-pagination .swiper-pagination-bullet {

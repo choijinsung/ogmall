@@ -326,27 +326,9 @@ header nav .sub-menu .menu > li:last-child {
     margin-bottom: 70px;
     margin-left: 25px;
   }
-}
-/* TRHEE BUTTONS */
-.three-btns {
-  position: fixed;
-  bottom: 30px;
-  right: 0;
-  z-index: 9;
-  width: 50px;
-  height: 150px;
-  background-color: black;
-  color: #fff;
-  border-bottom-left-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (max-width: 740px) {
-  .three-btns {
-    
+  .main .swiper-button-prev,
+  .main .swiper-button-next {
+    display: none;
   }
 }
 /* NEW */
@@ -409,6 +391,11 @@ header nav .sub-menu .menu > li:last-child {
   font-size: 16px;
   font-weight: 400;
   color: black;
+}
+@media (max-width: 740px) {
+  .new {
+    width: 100vw;
+  }
 }
 /* BEST */
 .best {
@@ -540,6 +527,11 @@ header nav .sub-menu .menu > li:last-child {
 .best .items .small-img .last-line img:last-child {
   margin-right: 0;
 }
+@media (max-width: 740px) {
+  .best {
+    width: 100vw;
+  }
+}
 /* COUPON */
 .coupon {
   margin-top: 50px;
@@ -612,6 +604,11 @@ header nav .sub-menu .menu > li:last-child {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 740px) {
+  .coupon {
+    width: 100vw;
+  }
+}
 /* SALE */
 .sale {
   width: 100%;
@@ -673,6 +670,11 @@ header nav .sub-menu .menu > li:last-child {
   font-weight: 400;
   color: black;
 }
+@media (max-width: 740px) {
+  .sale {
+    width: 100vw;
+  }
+}
 /* GUIDANCE */
 .guidance {
   width: 100%;
@@ -699,6 +701,36 @@ header nav .sub-menu .menu > li:last-child {
   margin-top: 20px;
   color: black;
 }
+@media (max-width: 740px) {
+  .guidance {
+    width: 100vw;
+  }
+}
+/* TRHEE BUTTONS */
+.three-btns {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  z-index: 9;
+  width: 50px;
+  height: 150px;
+  background-color: black;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 740px) {
+  .three-btns {
+    background-color: transparent;
+  }
+  .go-up, .sms, .history {
+    color: black;
+  }
+}
 footer {
   background-color: black;
   width: 100%;
@@ -709,4 +741,9 @@ footer {
 footer p {
   font-size: 16px;
   line-height: 1.7;
+}
+@media (max-width: 740px) {
+  footer {
+    width: 100vw;
+  }
 }

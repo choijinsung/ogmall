@@ -3,7 +3,12 @@ import navigations from "../data/navigations.js"
 new Swiper(".main .swiper", {
   autoplay: true, // 자동 재생
   loop: true, // 반복 재생
-  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+  breakpoints: {
+    1024: {
+      slidesPerView: 3
+    }
+  },
   spaceBetween: 0, // 슬라이드 사이 여백
   centeredSlides: true, // 1번 슬라이드가 가운데 보이기
   pagination: {

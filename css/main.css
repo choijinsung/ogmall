@@ -395,6 +395,66 @@ header nav .sub-menu .menu > li:last-child {
 @media (max-width: 740px) {
   .new {
     width: 100vw;
+    margin-bottom: 200px;
+  }
+  .new .inner {
+    background: none;
+    flex-direction: column;
+    padding: 80px 30px;
+  }
+  .new .inner .text {
+    width: 50%;
+    height: 50px;
+  }
+  .new .inner .text h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }
+  .new .brand-part {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .new .brand-part h2 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .new .inner .items {
+    margin: 50px 0;
+    flex-direction: column;
+  }
+  .new .inner .items .item {
+    display: flex;
+    margin: 30px 30px 0 10px;
+    width: 100%;
+  }
+  .new .inner .items .item img {
+    width: 30%;
+  }
+  .new .inner .items .item:first-child {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .new .inner .items .item .item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .new .inner .items .item:first-child img {
+    width: 100%;
+    height: 100%;
+  }
+  .new .inner .items .item:first-child div {
+    display: none;
+  }
+  .new .inner .items .item p {
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+    margin-left: 10px;
   }
 }
 /* BEST */

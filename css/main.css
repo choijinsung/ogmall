@@ -18,6 +18,7 @@ header .sale-promotion {
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid white;
+  z-index: 2;
 }
 header .sale-promotion h2 {
   font-size: 17px;
@@ -531,7 +532,7 @@ header nav .sub-menu .menu > li:last-child {
 }
 .best .navigations .map li a img {
   width: 150%;
-  height: 150%;
+  z-index: 1;
 }
 /*Active accordion menu*/
 .best .navigations .map:hover ul {
@@ -603,6 +604,10 @@ header nav .sub-menu .menu > li:last-child {
   }
   .best .inner .items {
     padding: 50px 0;
+  }
+  .best .big-img,
+  .best .small-img {
+    display: none;
   }
 }
 /* COUPON */

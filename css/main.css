@@ -692,6 +692,32 @@ header nav .sub-menu .menu > li:last-child {
 @media (max-width: 740px) {
   .coupon {
     width: 100vw;
+    margin-top: 0;
+  }
+  .coupon .inner .inner-left {
+    margin: 0;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    background-color: #e5dcd3;
+    color: black;
+  }
+  .coupon .inner .inner-left .text {
+    flex-direction: column;
+  }
+  .coupon .inner .inner-left .text h3 {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .coupon .inner .inner-left .text p {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .coupon .inner .inner-left .btn-coupon {
+    background-color: white;
+  }
+  .coupon .inner .inner-right {
+    display: none;
   }
 }
 /* SALE */
@@ -759,6 +785,25 @@ header nav .sub-menu .menu > li:last-child {
   .sale {
     width: 100vw;
   }
+  .sale .inner .text h1 {
+    font-size: 20px;
+  }
+  .sale .brand-part h2 {
+    font-size: 10px;
+  }
+  .sale .inner .items .item {
+    display: none;
+  }
+  .sale .inner .items .item:first-child {
+    display: block;
+  }
+  .sale .inner .items .item {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .sale .inner .items .item p {
+    font-size: 12px;
+  }
 }
 /* GUIDANCE */
 .guidance {
@@ -789,6 +834,15 @@ header nav .sub-menu .menu > li:last-child {
 @media (max-width: 740px) {
   .guidance {
     width: 100vw;
+    height: 250px;
+  }
+  .guidance .inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
   }
 }
 /* TRHEE BUTTONS */
@@ -830,5 +884,10 @@ footer p {
 @media (max-width: 740px) {
   footer {
     width: 100vw;
+    height: 80px;
+    padding: 20px 0;
+  }
+  footer p {
+    font-size: 10px;
   }
 }

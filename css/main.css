@@ -195,6 +195,7 @@ header nav .sub-menu .menu > li:last-child {
   }
   header .sale-promotion {
     background-color: #c2935f;
+    border-bottom: none;
   }
   header .sale-promotion h2 {
     font-size: 12px;
@@ -603,10 +604,16 @@ header nav .sub-menu .menu > li:last-child {
     width: 100%;
   }
   .best .inner .items {
-    padding: 50px 0;
+    margin: 50px 0;
   }
-  .best .big-img,
-  .best .small-img {
+  .best .items .big-img {
+    margin-right: 5%;
+  }
+  .best .inner .items .small-img .middle-line {
+    height: 45px;
+  }
+  .best .inner .items .small-img .middle-line h3,
+  .best .inner .items .small-img .middle-line p {
     display: none;
   }
 }

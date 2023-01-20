@@ -591,6 +591,19 @@ header nav .sub-menu .menu > li:last-child {
   .best {
     width: 100vw;
   }
+  .best .inner {
+    flex-direction: column;
+  }
+  .best .inner .text {
+    width: 95%;
+    height: 100%;
+  }
+  .best .navigations .map li a img {
+    width: 100%;
+  }
+  .best .inner .items {
+    padding: 50px 0;
+  }
 }
 /* COUPON */
 .coupon {

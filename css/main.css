@@ -112,104 +112,83 @@ header nav .sub-menu .menu > li {
 header nav .sub-menu .menu > li:last-child {
   display: none;
 }
+header .mobile-title,
+header .mobile-nav {
+  display: none;
+}
 @media (max-width: 740px) {
   header .sale-promotion {
     position: fixed;
-    top: 50px;
+    top: 100px;
     width: 100vw;
-  }
-  header nav {
-    position: fixed;
-    top: 0;
-    height: 50px;
-    z-index: 8;
-    width: 100vw;
-  }
-  header nav .sub-menu {
-    width: 40%;
-    height: 100%;
-    margin-right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  header nav .sub-menu .menu > li {
-    display: none;
-  }
-  header nav .sub-menu .menu > li:last-child {
-    display: flex;
-  }
-  header nav .sub-menu .menu > li:last-child span {
-    font-size: 30px;
-    font-weight: 200;
-  }
-  header nav .main-menu {
-    width: 60%;
-    height: 100%;
-    margin-left: 0;
-  }
-  header .menu .item {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-  }
-  header .menu .item .item__name {
-    padding: auto 0;
-    font-size: 8px;
-  }
-  header .menu .main-menu-logo {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-  }
-  header .menu .item .item__contents {
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 45px;
-    display: none;
-  }
-  header .menu .item:hover .item__contents {
-    display: block;
-  }
-  header .menu .item .item__contents .contents__menu {
-    background-color: black;
-  }
-  header .menu .item .item__contents .contents__menu > ul {
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  header .menu .item .item__contents .contents__menu > ul > li {
-    width: 100px;
-  }
-  header .menu .item .item__contents .contents__menu > ul > li h4 {
-    padding: 3px 0 12px 0;
-    font-size: 10px;
-    color: #999;
-    cursor: pointer;
-  }
-  header .menu .item .item__contents .contents__menu > ul > li h4:hover {
-    color: white;
-  }
-  header .sale-promotion {
     background-color: #c2935f;
     border-bottom: none;
   }
-  header .sale-promotion h2 {
-    font-size: 12px;
-    font-weight: 400;
+  header nav {
+    display: none;
   }
-  header .sale-promotion .goto-promotion {
-    height: 40px;
-    cursor: pointer;
+  header .mobile-title {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    height: 49.5px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #b5b5b5;
+    z-index: 9;
+  }
+  header .mobile-title .title-text {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+  }
+  header .mobile-title .title-text .main-menu-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    display: flex;
     align-items: center;
   }
-  header .sale-promotion .goto-promotion .material-icons {
+  header .mobile-title .title-text h1 {
+    margin: 0 10px;
+  }
+  header .mobile-title .title-logo {
+    display: flex;
+  }
+  header .mobile-title .title-logo .material-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  header .mobile-nav {
+    position: fixed;
+    top: 50px;
+    background-color: black;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    z-index: 9;
+  }
+  header .mobile-nav .mobile-nav-category {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .mobile-nav .mobile-nav-category h2 {
     font-size: 12px;
+  }
+  header .mobile-nav .mobile-nav-logo {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+  header .mobile-nav .mobile-nav-logo span {
+    font-size: 24px;
+    font-weight: 100;
   }
 }
 /* MAIN */
@@ -228,6 +207,7 @@ header nav .sub-menu .menu > li:last-child {
   top: 0;
   width: 100%;
   height: 100%;
+  opacity: .7;
 }
 .main .swiper-slide .text {
   position: absolute;
@@ -299,7 +279,7 @@ header nav .sub-menu .menu > li:last-child {
 }
 @media (max-width: 740px) {
   .main {
-    margin-top: 90px;
+    margin-top: 140px;
     z-index: 1;
     position: relative;
   }

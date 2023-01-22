@@ -1,6 +1,6 @@
 export default [
   {
-    title: '1. 코트',
+    title: '1\u00A0\u00A0코트',
     maps: [
       { url: '../images/coat1.jpg' },
       { url: '../images/coat2.jpg' },
@@ -8,7 +8,7 @@ export default [
     ]
   },
   {
-    title: '2. 패딩',
+    title: '2\u00A0\u00A0패딩',
     maps: [
       { url: '../images/padding1.jpg' },
       { url: '../images/padding2.jpg' },
@@ -16,7 +16,7 @@ export default [
     ]
   },
   {
-    title: '3. 자켓',
+    title: '3\u00A0\u00A0자켓',
     maps: [
       { url: '../images/jacket1.jpg' },
       { url: '../images/jacket2.jpg' },
@@ -24,7 +24,7 @@ export default [
     ]
   },
   {
-    title: '4. 니트',
+    title: '4\u00A0\u00A0니트',
     maps: [
       { url: '../images/knit1.jpg' },
       { url: '../images/knit2.jpg' },
@@ -32,7 +32,7 @@ export default [
     ]
   },
   {
-    title: '5. 맨투맨',
+    title: '5\u00A0\u00A0맨투맨',
     maps: [
       { url: '../images/mantoman1.jpg' },
       { url: '../images/mantoman2.jpg' },

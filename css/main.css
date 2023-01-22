@@ -472,9 +472,12 @@ header .mobile-nav {
 }
 .best .navigations .map {
   margin-top: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #b5b5b5;
   cursor: pointer;
   user-select: none;
+}
+.best .navigations .map:first-child {
+  border-top: 1px solid #b5b5b5;
 }
 .best .navigations .map:nth-child(6) {
   padding-bottom: 0;

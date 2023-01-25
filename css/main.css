@@ -442,6 +442,10 @@ header .mobile-nav {
     font-size: 10px;
   }
 }
+.best-and-coupon {
+  display: flex;
+  flex-direction: column;
+}
 /* BEST */
 .best {
   width: 100%;
@@ -581,13 +585,16 @@ header .mobile-nav {
 @media (max-width: 740px) {
   .best {
     width: 100vw;
+    order: 2;
   }
   .best .inner {
     flex-direction: column;
+    padding-bottom: 0;
   }
   .best .inner .text {
     width: 95%;
     height: 100%;
+    order: 2;
   }
   .best .navigations .map li a img {
     width: 100%;
@@ -598,6 +605,7 @@ header .mobile-nav {
   .best .inner .mobile-items {
     display: flex;
     margin: 50px 0;
+    order: 1;
   }
   .grid {
     display: grid;
@@ -692,7 +700,8 @@ header .mobile-nav {
 @media (max-width: 740px) {
   .coupon {
     width: 100vw;
-    margin-top: 0;
+    margin-top: 50px;
+    order: 1;
   }
   .coupon .inner .inner-left {
     margin: 0;
@@ -784,6 +793,7 @@ header .mobile-nav {
 @media (max-width: 740px) {
   .sale {
     width: 100vw;
+    display: none;
   }
   .sale .inner .text h1 {
     font-size: 20px;
@@ -831,26 +841,38 @@ header .mobile-nav {
   margin-top: 20px;
   color: black;
 }
+.mobile-guidance {
+  display: none;
+}
 @media (max-width: 740px) {
   .guidance {
-    width: 100vw;
-    height: 250px;
+    display: none;
   }
-  .guidance .inner {
-    width: 100%;
+  .mobile-guidance {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  .guidance .inner .thing {
-    width: 50%;
-    height: 50%;
+  .mobile-guidance .inner-up,
+  .mobile-guidance .inner-down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
   }
-  .guidance .inner .thing img {
-    width: 15%;
+  .mobile-guidance .inner-up .thing,
+  .mobile-guidance .inner-down .thing {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .guidance .inner .thing p {
+  .mobile-guidance .inner-up .thing p,
+  .mobile-guidance .inner-down .thing p {
     font-size: 12px;
     margin-top: 10px;
+    color: black;
   }
 }
 /* TRHEE BUTTONS */

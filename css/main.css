@@ -575,6 +575,9 @@ header .mobile-nav {
 .best .items .small-img .last-line img:last-child {
   margin-right: 0;
 }
+.best .mobile-items {
+  display: none;
+}
 @media (max-width: 740px) {
   .best {
     width: 100vw;
@@ -590,17 +593,28 @@ header .mobile-nav {
     width: 100%;
   }
   .best .inner .items {
+    display: none;
+  }
+  .best .inner .mobile-items {
+    display: flex;
     margin: 50px 0;
   }
-  .best .items .big-img {
-    margin-right: 5%;
+  .grid {
+    display: grid;
+    width: 80vw;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(3, 26vw);
   }
-  .best .inner .items .small-img .middle-line {
-    height: 45px;
+  .grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
-  .best .inner .items .small-img .middle-line h3,
-  .best .inner .items .small-img .middle-line p {
-    display: none;
+  .grid-big {
+    grid-column: 1/3;
+    grid-row: 1/3;
   }
 }
 /* COUPON */
@@ -824,11 +838,19 @@ header .mobile-nav {
   }
   .guidance .inner {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .guidance .inner .thing {
+    width: 50%;
+    height: 50%;
+  }
+  .guidance .inner .thing img {
+    width: 15%;
+  }
+  .guidance .inner .thing p {
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
 /* TRHEE BUTTONS */
@@ -870,10 +892,10 @@ footer p {
 @media (max-width: 740px) {
   footer {
     width: 100vw;
-    height: 80px;
-    padding: 20px 0;
+    height: 90px;
+    padding: 40px 0;
   }
   footer p {
-    font-size: 10px;
+    font-size: 8px;
   }
 }

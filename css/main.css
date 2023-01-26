@@ -592,7 +592,7 @@ header .mobile-nav {
     padding-bottom: 0;
   }
   .best .inner .text {
-    width: 95%;
+    width: 100%;
     height: 100%;
     order: 2;
   }
@@ -851,28 +851,47 @@ header .mobile-nav {
   .mobile-guidance {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .mobile-guidance .inner-up,
   .mobile-guidance .inner-down {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 90vw;
+    width: 100vw;
   }
   .mobile-guidance .inner-up .thing,
   .mobile-guidance .inner-down .thing {
     height: 150px;
+    width: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  .mobile-guidance .inner-up .thing img,
+  .mobile-guidance .inner-down .thing img {
+    width: 50%;
+    position: absolute;
+  }
+  .mobile-guidance .inner-up .thing img {
+    bottom: 40px;
+  }
+  .mobile-guidance .inner-down .thing img {
+    top: 30px;
   }
   .mobile-guidance .inner-up .thing p,
   .mobile-guidance .inner-down .thing p {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 7px;
     color: black;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+  }
+  .mobile-guidance .inner-up .thing p {
+    bottom: 20px;
+  }
+  .mobile-guidance .inner-down .thing p {
+    top: 50px;
   }
 }
 /* TRHEE BUTTONS */

@@ -5,7 +5,7 @@ new Swiper(".main .swiper", {
   loop: true, // 반복 재생
   slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
   breakpoints: {
-    1024: {
+    768: {
       slidesPerView: 3
     }
   },
